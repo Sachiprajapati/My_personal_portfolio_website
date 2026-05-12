@@ -1,0 +1,21 @@
+.circular-skill-bar {
+  position: relative;
+  width: 140px;
+  height: 140px;
+  transition: transform 0.3s ease;
+}
+.circular-skill-bar:hover { transform: scale(1.05); }
+svg { transform: rotate(-90deg); width: 140px; height: 140px; }
+circle { fill: transparent; stroke-width: 10; }
+.circle-bg { stroke: #e0e0e0; }
+.circle-progress {
+  stroke-linecap: round;
+  transition: stroke-dashoffset 1.5s ease-out, stroke 2s ease;
+}
+.skill-text {
+  position: absolute;
+  top: 50%; left: 50%; transform: translate(-50%, -50%);
+  text-align: center;
+}
+.skill-text h3 { margin: 0; font-size: 1rem; color: var(--text-color); }
+.skill-text span { font-size: 1.5rem; font-weight: 600; }
